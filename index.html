@@ -13,44 +13,59 @@
 </head>
 
 <body>
-  <!-- Banner & Nav-bar -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img class="nav-logo" src="assets/img/logo.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+  <!-- Nav-bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand col-lg-4 " href="#"><img class="nav-logo" src="assets/img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-lg-8" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="gallery.html">Galery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+            <a href="cart.html" class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="notification">3</span>
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="menu.html">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Galery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about-us.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact-us.html">Contact Us</a>
-          </li>
-        </ul>
-
+          </ul>
+  
+        </div>
+  
       </div>
-
+    </nav>
+  </header>
+  <!-- banner -->
+  <div class="banner  d-flex align-items-center slider_bg_1 overlay">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-xl-9 col-md-9 col-md-12">
+          <div class="slider_text text-center">
+            <h3>Fresh and Delicious Food
+              For your Health</h3>
+            <a href="menu.html" class="View-Menus-btn">View Menus</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </nav>
-  <section class="main-banner">
-    <div class="centerd-content text-center col-xl-9 col-md-9">
-      <h3>Fresh and Delicious Food
-        For your Health</h3>
-      <a href="#" class="View-Menus-btn">View Menus</a>
-    </div>
-  </section>
+  </div>
   <!-- Second section about_area -->
   <section class="about_area">
     <div class="icon_1 d-none d-md-block">
@@ -159,72 +174,31 @@
                   <img src="assets/img/1.png" alt="">
                 </div>
                 <div class="info">
-                  <h3>#1. Chicken Chilis</h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h3>Chicken Chilis</h3>
+                    <span>$20</span>
+                  </div>
                   <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6">
-              <div class="single_delicious d-flex align-items-center">
-                <div class="thumb">
-                  <img src="assets/img/2.png" alt="">
-                </div>
-                <div class="info">
-                  <h3>#2. Fried Rice</h3>
-                  <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="single_delicious d-flex align-items-center">
-                <div class="thumb">
-                  <img src="assets/img/5.png" alt="">
-                </div>
-                <div class="info">
-                  <h3>#03. Burger Cury</h3>
-                  <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
+                  <button class="btn btn-success">add to cart <i class="fa fa-plus ms-2"></i></button>
                 </div>
               </div>
             </div>
             <div class="col-xl-6 col-md-6 col-lg-6">
               <div class="single_delicious d-flex align-items-center">
                 <div class="thumb">
-                  <img src="assets/img/4.png" alt="">
+                  <img src="assets/img/1.png" alt="">
                 </div>
                 <div class="info">
-                  <h3>#04. Chicken Chilis</h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h3>Chicken Chilis</h3>
+                    <span>$20</span>
+                  </div>
                   <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
+                  <button class="btn btn-danger">remove from cart <i class="fa fa-minus ms-2"></i></button>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="single_delicious d-flex align-items-center">
-                <div class="thumb">
-                  <img src="img/delicious/4.png" alt="">
-                </div>
-                <div class="info">
-                  <h3>#05. Vegetable fry</h3>
-                  <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="single_delicious d-flex align-items-center">
-                <div class="thumb">
-                  <img src="img/delicious/6.png" alt="">
-                </div>
-                <div class="info">
-                  <h3>#01. Chicken Chilis</h3>
-                  <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
@@ -232,64 +206,45 @@
             <div class="col-xl-6 col-md-6 col-lg-6">
               <div class="single_delicious d-flex align-items-center">
                 <div class="thumb">
-                  <img src="assets/img/1 (1).png" alt="">
+                  <img src="assets/img/1.png" alt="">
                 </div>
                 <div class="info">
-                  <h3>#12. Chicken Chilis</h3>
+                  <div class="d-flex justify-content-between">
+                    <h3>Chicken Chilis</h3>
+                    <span>$20</span>
+                  </div>
                   <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
-                </div>
-              </div>
-              <div class="single_delicious d-flex align-items-center">
-                <div class="thumb">
-                  <img src="assets/img/2 (1).png" alt="">
-                </div>
-                <div class="info">
-                  <h3>#10. Fried Rice</h3>
-                  <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
-                </div>
-              </div>
-              <div class="single_delicious d-flex align-items-center">
-                <div class="thumb">
-                  <img src="assets/img/3 (1).png" alt="">
-                </div>
-                <div class="info">
-                  <h3>#02. Burger Cury</h3>
-                  <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
+                  <button class="btn btn-success">add to cart <i class="fa fa-plus ms-2"></i></button>
                 </div>
               </div>
             </div>
             <div class="col-xl-6 col-md-6 col-lg-6">
               <div class="single_delicious d-flex align-items-center">
                 <div class="thumb">
-                  <img src="assets/img/4 (1).png" alt="">
+                  <img src="assets/img/1.png" alt="">
                 </div>
                 <div class="info">
-                  <h3>#16. Chicken Chilis</h3>
+                  <div class="d-flex justify-content-between">
+                    <h3>Chicken Chilis</h3>
+                    <span>$20</span>
+                  </div>
                   <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
+                  <button class="btn btn-success">add to cart <i class="fa fa-plus ms-2"></i></button>
                 </div>
               </div>
+            </div>
+            <div class="col-xl-6 col-md-6 col-lg-6">
               <div class="single_delicious d-flex align-items-center">
                 <div class="thumb">
-                  <img src="assets/img/5 (1).png" alt="">
+                  <img src="assets/img/1.png" alt="">
                 </div>
                 <div class="info">
-                  <h3>#08. Vegetable fry</h3>
+                  <div class="d-flex justify-content-between">
+                    <h3>Chicken Chilis</h3>
+                    <span>$20</span>
+                  </div>
                   <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
-                </div>
-              </div>
-              <div class="single_delicious d-flex align-items-center">
-                <div class="thumb">
-                  <img src="assets/img/6 (1).png" alt="">
-                </div>
-                <div class="info">
-                  <h3>#01. Chicken Chilis</h3>
-                  <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
+                  <button class="btn btn-success">add to cart <i class="fa fa-plus ms-2"></i></button>
                 </div>
               </div>
             </div>
@@ -300,64 +255,45 @@
             <div class="col-xl-6 col-md-6 col-lg-6">
               <div class="single_delicious d-flex align-items-center">
                 <div class="thumb">
-                  <img src="img/delicious/1.png" alt="">
+                  <img src="assets/img/1.png" alt="">
                 </div>
                 <div class="info">
-                  <h3>#12. Chicken Chilis</h3>
+                  <div class="d-flex justify-content-between">
+                    <h3>Chicken Chilis</h3>
+                    <span>$20</span>
+                  </div>
                   <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
-                </div>
-              </div>
-              <div class="single_delicious d-flex align-items-center">
-                <div class="thumb">
-                  <img src="img/delicious/3.png" alt="">
-                </div>
-                <div class="info">
-                  <h3>#10. Fried Rice</h3>
-                  <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
-                </div>
-              </div>
-              <div class="single_delicious d-flex align-items-center">
-                <div class="thumb">
-                  <img src="img/delicious/5.png" alt="">
-                </div>
-                <div class="info">
-                  <h3>#02. Burger Cury</h3>
-                  <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
+                  <button class="btn btn-success">add to cart <i class="fa fa-plus ms-2"></i></button>
                 </div>
               </div>
             </div>
             <div class="col-xl-6 col-md-6 col-lg-6">
               <div class="single_delicious d-flex align-items-center">
                 <div class="thumb">
-                  <img src="img/delicious/2.png" alt="">
+                  <img src="assets/img/1.png" alt="">
                 </div>
                 <div class="info">
-                  <h3>#16. Chicken Chilis</h3>
+                  <div class="d-flex justify-content-between">
+                    <h3>Chicken Chilis</h3>
+                    <span>$20</span>
+                  </div>
                   <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
+                  <button class="btn btn-success">add to cart <i class="fa fa-plus ms-2"></i></button>
                 </div>
               </div>
+            </div>
+            <div class="col-xl-6 col-md-6 col-lg-6">
               <div class="single_delicious d-flex align-items-center">
                 <div class="thumb">
-                  <img src="img/delicious/4.png" alt="">
+                  <img src="assets/img/1.png" alt="">
                 </div>
                 <div class="info">
-                  <h3>#08. Vegetable fry</h3>
+                  <div class="d-flex justify-content-between">
+                    <h3>Chicken Chilis</h3>
+                    <span>$20</span>
+                  </div>
                   <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
-                </div>
-              </div>
-              <div class="single_delicious d-flex align-items-center">
-                <div class="thumb">
-                  <img src="img/delicious/6.png" alt="">
-                </div>
-                <div class="info">
-                  <h3>#01. Chicken Chilis</h3>
-                  <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-                  <span>$20</span>
+                  <button class="btn btn-success">add to cart <i class="fa fa-plus ms-2"></i></button>
                 </div>
               </div>
             </div>
@@ -411,7 +347,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-6 col-md-6 col-lg-7 ">
-            <div class="footer_widget">
+            <div class="footer_widget d-flex justify-content-center align-content-center gap-2">
               <div class="footer_logo">
                 <a href="#">
                   <img src="assets/img/logo.png" alt="">
@@ -420,8 +356,6 @@
               <p>5th flora, 700/D kings road, green <br> lane New York-1782 <br>
                 <a href="#">+10 367 826 2567</a> <br>
                 <a href="#">contact@carpenter.com</a>
-              </p>
-              <p>
               </p>
               
             </div>
@@ -440,6 +374,9 @@
           </div>
           <div class="col-xl-2 col-md-6 col-lg-2">
             <div class="footer_widget">
+              <h3 class="footer_title">
+                Socail Links
+              </h3>
               <div class="socail_links">
                 <ul>
                   <li>

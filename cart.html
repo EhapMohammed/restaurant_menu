@@ -56,38 +56,20 @@
     <div class="row">
       <div class="col-xl-12">
         <div class="bradcam_text text-center">
-          <h3>Menu</h3>
+          <h3>cart</h3>
         </div>
       </div>
     </div>
   </div>
 </div>
 <!--  -->
-<!-- Manu_area -->
+<!-- cart -->
 <section class="Delicious_area mb-5">
 
 <div class="container">
   <div class="row">
-    
-    <div class=" col-md-3 col-lg-3">
-      <div class="items-filter">
-        <div class="filter-item">
-          <i class="fa fa-angle-right me-2"></i>
-          <p>sheshtawook</p>
-        </div>
-        <div class="filter-item">
-          <i class="fa fa-angle-right me-2"></i>
-          <p>sheshtawook</p>
-        </div>
-        <div class="filter-item">
-          <i class="fa fa-angle-right me-2"></i>
-          <p>sheshtawook</p>
-        </div>
-      </div>
-      
-
-    </div>
-    <div class="col-xl-6 col-md-6 col-lg-6 menu-list">
+    <div class="col-xl-9 col-md-9 col-lg-9 menu-list">
+      <!-- item -->
       <div class="single_delicious ">
         <div class="thumb">
           <img src="assets/img/1.png" alt="">
@@ -98,9 +80,15 @@
             <span>$20</span>
           </div>
           <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-          <button class="btn btn-success">add to cart <i class="fa fa-plus ms-2"></i></button>
+          <div class="d-flex align-items-center ">
+            <button class="btn btn-success"><i class="fa fa-plus"></i></button>
+            <p class="m-0 p-2">1</p>
+            <button class="btn btn-danger"><i class="fa fa-minus"></i></button>
+          </div>
+          
         </div>
       </div>
+      <!-- item -->
       <div class="single_delicious">
         <div class="thumb">
           <img src="assets/img/1.png" alt="">
@@ -111,33 +99,59 @@
             <span>$20</span>
           </div>
           <p>Craft beer elit seitan exercitation photo booth et 8-bit kale chips.</p>
-          <button class="btn btn-success">add to cart <i class="fa fa-plus ms-2"></i></button>
+          <div class="d-flex align-items-center">
+            <button class="btn btn-success"><i class="fa fa-plus"></i></button>
+            <p class="m-0 p-2">4</p>
+            <button class="btn btn-danger"><i class="fa fa-minus"></i></button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-md-3 col-lg-3 d-flex justify-content-center align-items-start">
-      <div class="menu-page-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" 
-      viewBox="0 0 511 511" xml:space="preserve"><path 
-      d="M445.663 469.921 431.301 110.88A15.457 15.457 0 0 0 415.814 96H351v-.5C351
-       42.841 308.159 0 255.5 0S160 42.841 160 95.5v.5H95.187a15.459 
-        15.459 0 0 0-15.488 14.88L65.337 469.921c-.434 10.842 3.468 21.122 10.985 28.946C83.84 
-        506.691 93.956 511 104.806 511h301.389c10.851 0 20.966-4.309 28.484-12.133 7.516-7.825 
-        11.418-18.104 10.984-28.946zM175 95.5c0-44.388 36.112-80.5 80.5-80.5S336 51.112 336 
-        95.5v.5H175v-.5zm248.862 392.974c-4.663 4.853-10.938 7.526-17.667 7.526H104.806c-6.73
-         0-13.004-2.672-17.667-7.525-4.663-4.853-7.083-11.229-6.813-17.954L94.687 
-         111.48c.011-.27.23-.48.5-.48H160v48.5a7.5 7.5 0 0 0 15 0V111h161v48.5a7.5 7.5 0 0 0 15
-          0V111h64.814c.269 0 .488.21.499.48l14.362 359.041c.269 6.724-2.151 13.1-6.813 17.953z">
-        </path></svg>
-        <p>add item to cart</p>
+    <div class=" col-md-3 col-lg-3">
+      <div class="items-filter p-2">
+        <p class="fw-bold">Order Price : $40</p>
+        <p class="fw-bold border-bottom border-secondary pb-2 my-2">Service Price : $5</p>
+        <p class="fw-bold">Total Price : $45</p>
       </div>
-      
-    </div>
-    
-    
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success mt-4 w-100" data-bs-toggle="modal" data-bs-target="#customer-info-modal">
+        Order Now
+      </button>
+    </div> 
   </div>
 </div>
 </section>
+<!-- Modal -->
+<div class="modal fade" id="customer-info-modal" tabindex="-1" aria-labelledby="customer-info-modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="customer-info-modalLabel">Delivery Info</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputName" class="form-label">Name</label>
+            <input id="inputName" type="text" class="form-control" placeholder="Enter Full Name" >
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Your Email">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">Submit Order</button>
+      </div>
+    </div>
+  </div>
+</div> 
 
 
 <!-- footer -->
